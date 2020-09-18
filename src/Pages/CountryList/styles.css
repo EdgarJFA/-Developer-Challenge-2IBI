@@ -54,7 +54,7 @@
     box-sizing: border-box;
     padding: 0 10px;
     border: none;
-    color: #ffffff;
+    color: #FFF;
     font-size: 14px;
     transition: filter 0.5s;
 }
@@ -66,6 +66,28 @@
     border-radius: 10px;
     height: 35px;
     margin: 0 10px;
+}
+
+#GetCountries a.export-excel-csv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color:#52B788;
+    box-sizing: border-box;
+    color: #FFF;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 35px;
+    margin: 0 10px;
+    padding: 0 10px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#GetCountries a.export-excel-csv:hover {
+    filter: brightness(85%);
 }
 
 #GetCountries button:hover {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { WaveLoading  } from 'react-loadingg';
 import ReactToExcel from 'react-html-table-to-excel';
+import { CSVLink } from "react-csv";
 
 import api from '../../services/api';
 import './styles.css';
@@ -13,6 +14,19 @@ function CountryList() {
     const [loading, setLoading] = useState(true);
     const [nameFile, setNameFile] = useState('');
 
+    const headers = [
+        { label: 'Country', key: 'name' },
+        { label: 'Capital', key: 'capital' },
+        { label: 'Native Name', key: 'nativeName' },
+        { label: 'Calling Codes', key: 'callingCodes' },
+        { label: 'Region', key: 'region' },
+        { label: 'Subregion', key: 'subregion' },
+        { label: 'Population', key: 'population' },
+        { label: 'Area', key: 'area' },
+        { label: 'Time zones', key: 'timezones' },
+        { label: 'Flag Link', key: 'flag' },
+      ];
+
     useEffect(() => {
         handleSetPath();
     }, []);
@@ -20,8 +34,8 @@ function CountryList() {
     function handleSetPath(path = 'all', fileName = 'All Countries') {
         setLoading(true);
         setApiLoaded(false);
-        api.get(path).then(response => {
-            setInfoCountries(response.data);
+        api.get(path).then(response => {             
+            setInfoCountries(response.data);            
             setNameFile(fileName);
             setLoading(false);
             setApiLoaded(true);
@@ -82,7 +96,7 @@ function CountryList() {
                                                         <td>{infoCountrie.region}</td>
                                                         <td>{infoCountrie.subregion}</td>
                                                         <td>{infoCountrie.population}</td>
-                                                        <td>{infoCountrie.area}</td>
+                                                        <td>{infoCountrie.area}</td>                                                        
                                                         <td>
                                                             { 
                                                             (!infoCountrie.timezones[1]) ? infoCountrie.timezones[0] : `${infoCountrie.timezones[0]}, +`
@@ -122,13 +136,26 @@ function CountryList() {
                         buttonText="Export to XLS"
                     />
 
-                    <ReactToExcel
-                        className="export-excel"
-                        table="table-to-xls"
-                        filename= {nameFile}
-                        sheet="sheet 1"
-                        buttonText="Export to CSV"
-                    />
+                    <CSVLink
+                        headers={headers}
+                        data={infoCountries.map(infoCountrie => ({
+                            name: infoCountrie.name,
+                            capital: infoCountrie.capital,
+                            nativeName: infoCountrie.nativeName,
+                            callingCodes: infoCountrie.callingCodes,
+                            region: infoCountrie.region,
+                            subregion: infoCountrie.subregion,
+                            population: infoCountrie.population,
+                            area: infoCountrie.area,
+                            timezones: infoCountrie.timezones,
+                            flag: infoCountrie.flag
+                        }))}                        
+                        filename={`${nameFile}.csv`}
+                        className="export-excel-csv"
+                        // target="_blank"
+                    >
+                        Export to CSV
+                    </CSVLink>
                 </div> : <></>    
             } 
         </div>
