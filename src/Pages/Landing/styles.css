@@ -146,3 +146,37 @@ body {
 #landing .footer-links > a {
     margin-top: 22px;
 }
+
+
+a.top-button {
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    bottom: 59px;
+    animation: fadeIn 0.3s;
+    right: 20px;
+    transform: 0.4s;
+}
+
+a.top-button > img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+a.top-button:hover {
+    background: var(--top-button);
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.4;
+    }
+}

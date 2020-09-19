@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import AdventureImg from '../../assets/undraw_adventure_4hum.svg';
@@ -12,6 +12,19 @@ import './styles.css';
 import '../../global.css';
 
 function Landing() {
+
+    const [showScroll, setShowScroll] = useState(false);
+
+    const checkScrollUp = () => {
+        if( !showScroll && window.pageYOffset > 150) {
+            setShowScroll(true);
+        } else if (showScroll && window.pageYOffset <= 150) {
+            setShowScroll(false);
+        }
+    }
+
+    window.addEventListener('scroll', checkScrollUp);
+
     return (
         <div id="landing">
             <div className="home-page">
@@ -56,7 +69,7 @@ function Landing() {
             <section >            
                 <div className="separator"></div>
             </section> 
-            <a href="/#" className="top-button">
+            <a href="/#" className="top-button" style={{ display: showScroll ? 'flex' : 'none'}}>
                 <img src={ArrowIcon} alt="Arrow Top"/>
             </a>
             <footer>
