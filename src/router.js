@@ -11,7 +11,7 @@ function Routes() {
             <Switch>
                 <Route path="/" exact component={Landing} />
                 <Route path="/listofcountries" exact component={CountryList} />
-                <Route path="*" component={NotFound} />
+                <Route path="/error" component={NotFound} />
             </Switch>
         </BrowserRouter>
     );
