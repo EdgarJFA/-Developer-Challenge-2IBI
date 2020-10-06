@@ -6,6 +6,7 @@ import ConnectWorldImg from '../../assets/undraw_connected_world_wuay.svg';
 import shapes0Img from '../../assets/Shapes.svg';
 import shapes1Img from '../../assets/Shapes1.svg';
 import ArrowIcon from '../../assets/arrowUp.svg';
+import separator from '../../assets/Separator.svg'
 
 import '../../components/css/Button.css';
 import './styles.css';
@@ -57,7 +58,7 @@ function Landing() {
                             <img src={shapes0Img} className="shapes0" alt="shape"/>              
                             <div className="TextContent" >
                                 <h2>Region and Regional Bloc</h2>
-                                <p>Search by region: Africa, Americas, Asia, Europe, Oceania, and  Search by regional bloc. example: EU (European Union),  EFTA (European Free Trade Association), AU (African Union), NAFTA (North American Free Trade Agreement), PA (Pacific Alliance) and another regional bloc.</p>
+                                <p>Search by region: Africa, Americas, Asia, Europe, Oceania, and Search by regional bloc. example: EU (European Union), EFTA (European Free Trade Association), AU (African Union), NAFTA (North American Free Trade Agreement), PA (Pacific Alliance) and another regional bloc.</p>
                             
                                 <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer" className="learn-more">Learn More</Link>
                             </div>  
@@ -67,7 +68,8 @@ function Landing() {
                 </div>
             </div>        
             <section >            
-                <div className="separator"></div>
+                {/* <div className="separator"></div> */}
+                <img src={separator} className="separator" alt="separator"/>
             </section> 
             <a href="/#" className="top-button" style={{ display: showScroll ? 'flex' : 'none'}}>
                 <img src={ArrowIcon} alt="Arrow Top"/>
