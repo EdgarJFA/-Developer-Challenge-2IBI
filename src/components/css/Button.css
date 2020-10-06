@@ -1,45 +1,41 @@
-.TextContent a.normal {
+.TextContent a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
-    color: #ffffff;
     width: 200px;
     height: 52px;
-    font-size: 18px;
-    border-radius: 50px;
     font-family: Roboto, sans-serif;
+    border-radius: 50px;
+    margin-top: 30px;
+    line-height: 42px;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
-    line-height: 42px;
+
+}
+
+.TextContent a.normal {
+    background-color: var(--primary-color);
+    color: #ffffff;
     transition: 0.5s;
-    margin-top: 30px;
+    border: none;
 }
 
 .TextContent a.normal:hover {
     background-color: var(--secundary-color);
-    border: none;
     color: #ffffff;
 }
 
-.TextContent a.learn-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 52px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 42px;
 
+.TextContent a.learn-more {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin-top: 30px;
+    /* box-sizing: border-box; */
+}
+
+.TextContent a.learn-more:hover {
+    color: var(--secundary-color);
+    border: 3px solid var(--secundary-color);
 }
 
 /* @media (max-width: 700px) {
