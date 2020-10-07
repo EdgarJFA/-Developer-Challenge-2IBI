@@ -41,11 +41,8 @@
 @media (max-width: 390px) {
     .TextContent a.normal, .TextContent a.learn-more {
         margin-top: 0;
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
     }
-
-    /* .TextContent a.learn-more {
-        width: 120px;
-        height: 40px;    
-        margin-top: 30px;
-    } */
 }

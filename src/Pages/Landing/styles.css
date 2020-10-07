@@ -275,6 +275,17 @@ a.top-button:hover {
             height: 200px;
             font-size: 14px;
         }
+
+        #landing div.imageContainer2 > img {
+            width: 310px;
+            height:200px;
+        }
+
+        #landing section {
+            width: 0;
+            height: 0;
+            margin: 30px 0;
+        }
     }
 }
 
