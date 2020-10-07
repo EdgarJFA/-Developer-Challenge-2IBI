@@ -250,16 +250,24 @@ a.top-button:hover {
     }
     
     #landing footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 160px;
         width: 100%;
-        background: none;  
+        background: #FFF;  
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     } 
     
     #landing .footer {
         margin: 0;
     }
 
-    /* @media(max-width: 350px ) {
+    #landing .footer-links {
+        margin-right: 20px;
+    }
+
+    /* @media(max-width: 320px ) {
 
     } */
 }
