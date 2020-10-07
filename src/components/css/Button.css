@@ -38,15 +38,14 @@
     border: 3px solid var(--secundary-color);
 }
 
-/* @media (max-width: 700px) {
-    .TextContent a.normal {
-        width: 120px;
-        height: 40px;
+@media (max-width: 390px) {
+    .TextContent a.normal, .TextContent a.learn-more {
+        margin-top: 0;
     }
 
-    .TextContent a.learn-more {
+    /* .TextContent a.learn-more {
         width: 120px;
         height: 40px;    
         margin-top: 30px;
-    }
-} */
+    } */
+}

@@ -194,8 +194,9 @@ a.top-button:hover {
     #landing h2 {
         width: 250px;
         height: 70px;
-        font-size: 28px;
+        font-size: 34px;
         margin-top: 0;
+        margin-bottom: 20px;
     }
 
     #landing .content {
@@ -267,8 +268,13 @@ a.top-button:hover {
         margin-right: 20px;
     }
 
-    /* @media(max-width: 320px ) {
+    @media(max-width: 390px ) {
 
-    } */
+        #landing main div.TextContent p {
+            width: 250px;
+            height: 200px;
+            font-size: 14px;
+        }
+    }
 }
 
