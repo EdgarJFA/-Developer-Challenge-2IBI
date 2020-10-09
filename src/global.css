@@ -53,7 +53,7 @@ a {
     text-decoration: none;
     margin-right: 15px;
     color: #a1a1a1;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -61,13 +61,16 @@ a {
     line-height: 16px;
 }
 
-header > a:hover {
+header > a:hover, a.active {
     color: var(--primary-color);
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     width: 100%;
-    padding: 10px 20px;
-    color: #ffffff;
-    border-radius: 0 30px 0 30px;
+    padding-bottom: 3px;
+    color: var(--primary-color);
+    /* border-radius: 0 30px 0 30px; */
+    border-bottom: 3px solid var(--primary-color);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 @media (max-width: 700px ) {
