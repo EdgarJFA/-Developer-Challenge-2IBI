@@ -31,7 +31,7 @@ function Landing() {
             <div className="home-page">
                 <div className="content">
                     <header>
-                        <Link to="/" rel="noopener noreferrer">Home</Link>
+                        <Link to="/" className="active" rel="noopener noreferrer">Home</Link>
                         <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer">View on Github</Link>
                         <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer">Docs API</Link>
                         <Link to="/listofcountries" rel="noopener noreferrer">Get Countries</Link>
