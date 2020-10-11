@@ -17,14 +17,13 @@ html {
 
 body {
     background-color: #ffffff;
-    /* margin-top: 2%; */
     font-family: roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
 .content {
     display: block;
-    width: 100%;
+    width: 90%;
     height: 100vh;
     max-width: 1100px;
     justify-content: center;
@@ -34,7 +33,7 @@ body {
 
 main {
     display: inline-block;
-    padding: 5% auto 0;
+    /* padding: 5% auto 0; */
     box-sizing: border-box;
 }
 
@@ -61,13 +60,15 @@ a {
     line-height: 16px;
 }
 
+header {
+    padding-top: 2%;
+}
+
 header > a:hover, a.active {
     color: var(--primary-color);
-    /* background-color: var(--primary-color); */
     width: 100%;
     padding-bottom: 3px;
     color: var(--primary-color);
-    /* border-radius: 0 30px 0 30px; */
     border-bottom: 3px solid var(--primary-color);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
