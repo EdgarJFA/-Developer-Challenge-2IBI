@@ -8,6 +8,9 @@ import shapes1Img from '../../assets/Shapes1.svg';
 import ArrowIcon from '../../assets/arrowUp.svg';
 import separator from '../../assets/Separator.svg'
 import mapImg from '../../assets/undraw_Map_dark_k9pw.svg';
+import twitterIcon from '../../assets/icons/twitter.svg';
+import instagramIcon from '../../assets/icons/instagram.svg';
+import githubIcon from '../../assets/icons/github.svg';
 
 import '../../components/css/Button.css';
 import './styles.css';
@@ -81,8 +84,8 @@ function Landing() {
                 <div className="footer" id="fim">
                     <div className="footer-links">
                         <strong>Usefull Links</strong>
-                        <a href="https://github.com/apilayer/restcountries" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                        <a href="https://restcountries.eu/#rest-countries" target="_blank" rel="noopener noreferrer">Docs API</a>
+                        <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer">View on GitHub</Link>
+                        <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer">Docs API</Link>
                         <Link to="/listofcountries" rel="noopener noreferrer">Get Countries</Link>
                     </div>                
                     <div className="footer-links">
@@ -91,8 +94,17 @@ function Landing() {
                         <Link to="/"rel="noopener noreferrer">Support</Link>
                         <Link to="/" rel="noopener noreferrer">Terms</Link>
                     </div>                
-                    <div className="footer-links">
-                        <strong>Our Social Medias</strong>                    
+                    <div className="footer-links socials">
+                        <strong>Our Social Medias</strong>
+                        <Link to={{ pathname: "https://twitter.com/edgarfeliciano" }} target="_blank" rel="noopener noreferrer">
+                            <img src={twitterIcon} alt="twitter"/>
+                        </Link>
+                        <Link to={{ pathname: "https://www.instagram.com/edgar_phee/" }} target="_blank" rel="noopener noreferrer">
+                            <img src={instagramIcon} alt="instagram"/>
+                        </Link>
+                        <Link to={{ pathname: "https://github.com/EdgarJFA" }} target="_blank" rel="noopener noreferrer">
+                            <img src={githubIcon} alt="github"/>
+                        </Link>                   
                     </div>                
                 </div>
             </footer>

@@ -147,6 +147,12 @@ main {
     margin-top: 22px;
 }
 
+#landing .socials > a:not(:first-child) {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
 a.top-button {
     display: flex;
     position: fixed;
