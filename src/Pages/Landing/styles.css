@@ -357,13 +357,8 @@ a.top-button:hover {
     }
     
     #landing footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 160px;
-        width: 100%;
-        background: #FFF;  
-        box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+        /* width: 100%; */
     } 
     
     #landing .map-container {
