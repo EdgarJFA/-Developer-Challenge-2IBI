@@ -29,6 +29,7 @@
 .TextContent a.learn-more {
     color: var(--primary-color);
     border: 3px solid var(--primary-color);
+    transition: 0.5s;
     /* box-sizing: border-box; */
 }
 

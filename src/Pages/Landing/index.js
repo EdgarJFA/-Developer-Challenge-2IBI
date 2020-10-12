@@ -61,9 +61,10 @@ function Landing() {
                                 <p>Search by region: Africa, Americas, Asia, Europe, Oceania, and Search by regional bloc. example: EU (European Union), EFTA (European Free Trade Association), AU (African Union), NAFTA (North American Free Trade Agreement), PA (Pacific Alliance) and another regional bloc.</p>
                             
                                 <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer" className="learn-more">Learn More</Link>
+                                <img src={shapes1Img} className="shapes" alt="shape"/> 
                             </div>  
                         </div>
-                        <img src={shapes1Img} className="shapes" alt="shape"/>                                    
+                        {/* <img src={shapes1Img} className="shapes" alt="shape"/>                                     */}
                     </main>                         
                 </div>
             </div>        
