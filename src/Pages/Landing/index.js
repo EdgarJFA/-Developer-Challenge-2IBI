@@ -7,6 +7,7 @@ import shapes0Img from '../../assets/Shapes.svg';
 import shapes1Img from '../../assets/Shapes1.svg';
 import ArrowIcon from '../../assets/arrowUp.svg';
 import separator from '../../assets/Separator.svg'
+import mapImg from '../../assets/undraw_Map_dark_k9pw.svg';
 
 import '../../components/css/Button.css';
 import './styles.css';
@@ -76,6 +77,7 @@ function Landing() {
                 <img src={ArrowIcon} alt="Arrow Top"/>
             </a>
             <footer>
+                <img src={mapImg} className="map-container" alt="Map"/>
                 <div className="footer" id="fim">
                     <div className="footer-links">
                         <strong>Usefull Links</strong>
