@@ -6,8 +6,9 @@
 </p>
 
 <p align="center">
-  <a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#Instalacao-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pré-requisitos">Pré-requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#instalação-e-execução">Instalação e execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
@@ -24,6 +25,15 @@
 Certifique-se de que tenha instalado o **npm** ou o **yarn** na sua maquína.
 
 ## Instalação e execução
+
+### `Execute a aplicação de duas formas`
+
+#### `1. Assesando o seguinte endereço no seu navegador:`
+```sh
+https://devchallenge2ibi.netlify.app
+```
+
+#### `2. Executando a aplicação no modo de desenvolvimento.`
 
 1. Abra o terminal do seu computador. Se estiver no Windows pode ser o CMD ou Powershell.
 2. Altere o diretório de trabalho atual para o local em que deseja ter o código do módulo salvo no seu computador.
