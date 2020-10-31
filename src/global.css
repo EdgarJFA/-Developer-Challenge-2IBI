@@ -74,10 +74,36 @@ header > a:hover, a.active {
     border-bottom-right-radius: 3px;
 }
 
+  .topnav .icon {
+    display: none;
+  }
+
+@media screen and (max-width: 1090px ){
+
+    .topnav {
+        /* background-color: #333; */
+        overflow: hidden;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #00000023;
+      }
+
+    .topnav a, .topnav a:hover {
+        border-bottom: none;
+    }
+
+    .topnav a:not(:first-child) {display: none;}
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+      }
+}
+
 @media (max-width: 700px ) {
     a {
         font-size: 11px;
         line-height: 14px;
     }
-
 }
+
+

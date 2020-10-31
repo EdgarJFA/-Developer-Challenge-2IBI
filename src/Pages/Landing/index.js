@@ -34,12 +34,15 @@ function Landing() {
         <div id="landing">
             <div className="home-page">
                 <div className="content">
-                    <header>
+                    <header className="topnav" id="myTopnav" >
                         <Link to="/" className="active" rel="noopener noreferrer">Home</Link>
                         <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer">View on Github</Link>
                         <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer">Docs API</Link>
                         <Link to="/listofcountries" rel="noopener noreferrer">Get Countries</Link>
                         <a href="/#fim"  rel="noopener noreferrer">Contact US</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </header>
                     <main>
                         <div className="second-container">
