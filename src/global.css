@@ -102,21 +102,30 @@ header > a:hover, a.active {
     }
 
     .topnav a:first-child {
-        margin-bottom: 3px;
+        margin-bottom: 12px;
+        padding-bottom: 0;
     }
 
     .topnav a:not(:first-child):hover {
-        background-color: var(--primary-color);
+        background-color: var(--top-button);
         color: #FFF;
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
     }
 
-    .topnav a:not(:first-child) {display: none;}
+    .topnav a:not(:first-child) {display: none;
+    background-color:  var(--primary-color);
+    color: #FFF;
+    justify-content: center;
+    padding: 10px;
+    }
 
     .topnav a.icon {
         float: right;
         display: block;
+        background-color: #FFF;
+        color:  #a1a1a180;
+        padding-top: 3px;
     }
 
     .topnav a.icon:hover {
