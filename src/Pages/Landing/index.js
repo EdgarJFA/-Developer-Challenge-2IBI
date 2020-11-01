@@ -28,6 +28,21 @@ function Landing() {
         }
     }
 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+        console.log(x.className);
+      }
+
+    function close() {
+        var x = document.getElementById("myTopnav");
+          x.className = "topnav";
+      }
+
     window.addEventListener('scroll', checkScrollUp);
 
     return (
@@ -36,12 +51,12 @@ function Landing() {
                 <div className="content">
                     <header className="topnav" id="myTopnav" >
                         <Link to="/" className="active" rel="noopener noreferrer">Home</Link>
-                        <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer">View on Github</Link>
-                        <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer">Docs API</Link>
+                        <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer" onClick={() => close()} >View on Github</Link>
+                        <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer" onClick={() => close()}>Docs API</Link>
                         <Link to="/listofcountries" rel="noopener noreferrer">Get Countries</Link>
-                        <a href="/#fim"  rel="noopener noreferrer">Contact US</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
+                        <a href="/#fim"  rel="noopener noreferrer" onClick={() => close()}>Contact US</a>
+                        <a href="javascript:void(0)" className="icon" onClick={() => myFunction()}>
+                            <i className="fa fa-bars"></i>
                         </a>
                     </header>
                     <main>
