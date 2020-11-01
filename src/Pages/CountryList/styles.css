@@ -8,7 +8,7 @@
 
 #GetCountries main {
     display: block;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 #GetCountries .sub-content {
@@ -20,6 +20,7 @@
     justify-content: center;
     padding-left: 90px;
     margin-bottom: 30px;
+    margin-top: 50px;
     color: #fff;
     border-radius: 10px;
     box-sizing: border-box;

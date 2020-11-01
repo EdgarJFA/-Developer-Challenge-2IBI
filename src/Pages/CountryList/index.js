@@ -45,14 +45,32 @@ function CountryList() {
         },30000);  
     }
 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+        console.log(x.className);
+      }
+
+    function close() {
+        var x = document.getElementById("myTopnav");
+          x.className = "topnav";
+      }
+
     return (
         <div id="GetCountries">
             <div className="content" >
-                <header>
+                <header className="topnav" id="myTopnav">
                     <Link to="/" rel="noopener noreferrer">Home</Link>
-                    <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer">View on Github</Link>
-                    <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer">Docs API</Link>
+                    <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer" onClick={() => close()}>View on Github</Link>
+                    <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer" onClick={() => close()}>Docs API</Link>
                     <Link to="/listofcountries" className="active" rel="noopener noreferrer">Get Countries</Link>
+                    <a href="javascript:void(0)" className="icon" onClick={() => myFunction()}>
+                        <i className="fa fa-bars"></i>
+                    </a>
                     {/* <a href="http://" target="_blank" rel="noopener noreferrer">Contact US</a> */}
                 </header>
                 <main>
