@@ -102,6 +102,7 @@ header > a:hover, a.active {
     }
 
     .topnav a:first-child {
+        margin-top: 30px;
         margin-bottom: 12px;
         padding-bottom: 0;
     }
@@ -109,15 +110,15 @@ header > a:hover, a.active {
     .topnav a:not(:first-child):hover {
         background-color: var(--top-button);
         color: #FFF;
-        /* display: flex;
-        justify-content: center; */
     }
 
-    .topnav a:not(:first-child) {display: none;
-    background-color:  var(--primary-color);
-    color: #FFF;
-    justify-content: center;
-    padding: 10px;
+    /* .topnav a:not(:first-child) */
+    .topnav a {
+        display: none;
+        background-color:  var(--primary-color);
+        color: #FFF;
+        justify-content: center;
+        padding: 10px;
     }
 
     .topnav a.icon {

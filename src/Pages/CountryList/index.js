@@ -64,13 +64,13 @@ function CountryList() {
         <div id="GetCountries">
             <div className="content" >
                 <header className="topnav" id="myTopnav">
+                    <a href="javascript:void(0)" className="icon" onClick={() => myFunction()}>
+                        <i className="fa fa-bars"></i>
+                    </a>
                     <Link to="/" rel="noopener noreferrer">Home</Link>
                     <Link to={{ pathname: "https://github.com/apilayer/restcountries" }} target="_blank" rel="noopener noreferrer" onClick={() => close()}>View on Github</Link>
                     <Link to={{ pathname: "https://restcountries.eu/#rest-countries" }} target="_blank" rel="noopener noreferrer" onClick={() => close()}>Docs API</Link>
                     <Link to="/listofcountries" className="active" rel="noopener noreferrer">Get Countries</Link>
-                    <a href="javascript:void(0)" className="icon" onClick={() => myFunction()}>
-                        <i className="fa fa-bars"></i>
-                    </a>
                     {/* <a href="http://" target="_blank" rel="noopener noreferrer">Contact US</a> */}
                 </header>
                 <main>
