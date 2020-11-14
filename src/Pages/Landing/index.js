@@ -50,7 +50,7 @@ function Landing() {
             <div className="home-page">
                 <div className="content">
                     <header className="topnav" id="myTopnav" >
-                        <a href="javascript:void(0)" className="icon" onClick={() => myFunction()}>
+                        <a href="/#" className="icon" onClick={() => myFunction()}>
                             <i className="fa fa-bars"></i>
                         </a>
                         <Link to="/" className="active" rel="noopener noreferrer">Home</Link>

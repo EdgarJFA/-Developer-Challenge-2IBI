@@ -64,7 +64,10 @@ function CountryList() {
         <div id="GetCountries">
             <div className="content" >
                 <header className="topnav" id="myTopnav">
-                    <a href="javascript:void(0)" className="icon" onClick={() => myFunction()}>
+                    <a 
+                     href="/listofcountries/#"
+                    //  href={{javascript:void(0)}}
+                     className="icon" onClick={() => myFunction()}>
                         <i className="fa fa-bars"></i>
                     </a>
                     <Link to="/" rel="noopener noreferrer">Home</Link>
